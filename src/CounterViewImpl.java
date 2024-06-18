@@ -11,11 +11,13 @@ public class CounterViewImpl extends JFrame implements CounterView {
         counterLabel = new JLabel("0");
         JButton incrementButton = createButton("Increment", presenter::increment);
         JButton decrementButton = createButton("Decrement", presenter::decrement);
+        JButton lockButton = createButton("Lock", presenter::changeLockCounter);
 
         JPanel panel = new JPanel();
         panel.add(counterLabel);
         panel.add(incrementButton);
         panel.add(decrementButton);
+        panel.add(lockButton); 
 
         add(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
