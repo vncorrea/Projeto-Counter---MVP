@@ -1,3 +1,9 @@
+package Presenter;
+
+import Model.CounterModel;
+import View.CounterView;
+import View.CounterViewImpl;
+
 public class CounterPresenterImpl implements CounterPresenter {
     private final CounterModel model;
     private CounterView view;
@@ -6,7 +12,7 @@ public class CounterPresenterImpl implements CounterPresenter {
         this.model = model;
     }
 
-    public void setView(CounterView view) {
+    public void setView(CounterViewImpl view) {
         this.view = view;
     }
 

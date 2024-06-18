@@ -1,3 +1,5 @@
+package Model;
+
 public class CounterModel {
     private int counter = 0;
     private boolean counterIsLocked = false;

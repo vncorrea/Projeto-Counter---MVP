@@ -1,3 +1,7 @@
+package View;
+
+import Presenter.CounterPresenterImpl;
+
 import javax.swing.*;
 
 public class CounterViewImpl extends JFrame implements CounterView {
@@ -17,7 +21,7 @@ public class CounterViewImpl extends JFrame implements CounterView {
         panel.add(counterLabel);
         panel.add(incrementButton);
         panel.add(decrementButton);
-        panel.add(lockButton); 
+        panel.add(lockButton);
 
         add(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
